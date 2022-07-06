@@ -22,7 +22,7 @@ button {
     padding: 15px 30px;
 }
 
-.hide{
+.hide2{
     display: none;
 }
 
@@ -30,8 +30,20 @@ button {
     display: none;
 }
 
+.hide3{
+    display: none;
+}
 
-.show{
+
+.show1{
+    
+    float: left;
+    position: relative;
+    display: block;
+
+  }
+
+  .show2{
     
     float: left;
     position: relative;
