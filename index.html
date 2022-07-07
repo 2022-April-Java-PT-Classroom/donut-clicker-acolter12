@@ -10,32 +10,52 @@
 
   <header>
 
-    <div id="navBar">
-
-      <button id="navBarItem1">Fred the Baker</button>
+ 
+      <nav id="navBar">
+        <ul class="navBar_list">
+        <li class="navBarItem">Fred the Baker</li>
+        <li class="navBarItem"><a href="https://orteil.dashnet.org/cookieclicker/">Game Inspiration</a></li>
+        <li class="navBarItem">About Me</li>
+        </ul>
+    <!-- </nav>  
+      <button id="navBarItem">Fred the Baker</button>
       <section class = "hide1">
         <h2 class="fred-theBaker">Fred the Baker</h2>
         <p>Fred the Baker Baking Company</p>
       </section>
 
-      <button id="navBarItem2">Inspiration</button>
-      <section class = "hide2">
-        <h2 class="cookie-clicker">My Inspiration</h2>
-        <p>Cookie Cliker Game</p>
+      <button id="navBarItem">Inspiration</button>
+        <h2 class="cookie-clicker" href="https://orteil.dashnet.org/cookieclicker/"> Inspiration</h2>
       </section>
 
-      <button id="navBarItem3">Contact</button>
+      <button id="navBarItem">Contact</button>
       <section class = "hide3">
         <h2 class="contact-info">Contact</h2>
         <p>About me, Contact info</p>
-      </section>
-    </div>
+      </section> -->
 
   </header>
 
   <body>
 
     <div class="container">
+
+      <section id="donutCount">
+        <h2 class="donutCount_heading">Donut's Made: </h2>
+        <div class="donutCount_number"></div>
+      </section>
+
+      <section class="autoClickers_info">
+        <p>Your Auto Clickers: </p>
+        <button class="autoClickers_info__purchase">Buy an Auto Clicker</button>
+      </section>
+
+      <section class="donutMultiplier_info">
+        <p>Your Multipliers: </p>
+        <button class="donutMultiplier_info__purchase">Buy a Donut Multiplier</button>
+      </section>
+
+      <button class="makeDonut_button">Make A Donut!</button>
 
     </div>
 

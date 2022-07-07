@@ -2,22 +2,46 @@
     background-color: floralwhite;
 }
 
+a{
+    text-decoration: none;
+    background-color: lightpink;
+    color: white;
+}
+
+a:hover{
+    background-color: hotpink;
+}
+
+.navBar_list{
+    background-color: lightpink;
+}
+
 #navBar{
     background-color: lightpink;
     display: flex;
     justify-content: space-evenly;
     padding: 2px;
+    text-decoration: none;
 }
 
-#navBar button:hover{
+.navBarItem:hover{
     background-color: hotpink;
 }
+
+.navBarItem{
+    display: inline;
+    background-color: lightpink;
+    color: white;
+    font-size: 16px;
+    padding: 15px 30px;
+    list-style-type: none;
+}
+
 
 button {
     background-color: lightpink;
     border: none;
     color: white;
-    display: inline-block;
     font-size: 16px;
     padding: 15px 30px;
 }
@@ -49,4 +73,9 @@ button {
     position: relative;
     display: block;
 
+  }
+
+  .makeDonut_button {
+    display: flex;
+    justify-content: center;
   }
