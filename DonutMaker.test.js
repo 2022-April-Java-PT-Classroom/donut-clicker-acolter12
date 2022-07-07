@@ -83,4 +83,30 @@ describe("DonutMaker", () => {
         expect(underTest.numDonutMultipliers).toEqual(4);
     });
 
+    test("increase click value by 1.2 with a donut multiplier", () => {
+        const underTest = new DonutMaker(10, 0, 1);
+        underTest.addDonut();
+        expect(underTest.numDonuts).toEqual(11.2);
+    });
+
+    test("increase click value by 1.44 with a second donut multiplier", () => {
+        const underTest = new DonutMaker(10, 0, 2);
+        underTest.addDonut();
+        expect(underTest.numDonuts).toEqual(11.44);
+    });
+
+    test("increase click value by 11.728 with a third donut multiplier", () => {
+        const underTest = new DonutMaker(10, 0, 3);
+        underTest.addDonut();
+        expect(underTest.numDonuts).toEqual(11.728);
+    });
+
+    test("when autoclicker is activated with multiplier the total amount of donuts added will increase by the number of autoclickers & multipliers", () =>{
+        const underTest = new DonutMaker(10, 1, 1);
+        underTest.addDonut();
+        expect(underTest.numDonuts).toEqual(12.2);
+    });
+
+
+
 });
