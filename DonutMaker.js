@@ -11,6 +11,7 @@ class DonutMaker {
     addDonut() {
         if(this.numAutoClickers >= 1 && this.numDonutMultipliers >=1) {
             this.numDonuts += Math.pow(1.2, this.numDonutMultipliers) +this.numAutoClickers;
+            this.isAutoClickerActivated = true;
             
         }else if(this.numAutoClickers >=1) {
             this.numDonuts += 1;
@@ -25,13 +26,13 @@ class DonutMaker {
     }
 
     addAutoClicker() {
-        let autoClickerCost = 5;
+        let autoClickerCost = 100;
 
         for(let i = 0; i < this.numAutoClickers; i++){
             autoClickerCost += autoClickerCost * .10;
         }
 
-        if(this.numDonuts >= 5) {
+        if(this.numDonuts >= autoClickerCost) {
         this.numDonuts -= autoClickerCost;
         this.numAutoClickers += 1;
         } 
@@ -46,7 +47,7 @@ class DonutMaker {
         for(let i = 0; i < this.numDonutMultipliers; i++) {
             donutMultiplierCost += donutMultiplierCost * .10;
         }
-        if(this.numDonuts >= 10) {
+        if(this.numDonuts >= donutMultiplierCost) {
         this.numDonuts -= donutMultiplierCost;
         this.numDonutMultipliers += 1;
         }
