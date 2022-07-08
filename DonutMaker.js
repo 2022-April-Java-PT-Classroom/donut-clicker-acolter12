@@ -1,9 +1,10 @@
 class DonutMaker {
 
-    constructor(numDonuts, numAutoClickers, numDonutMultipliers) {
+    constructor(numDonuts, numAutoClickers, numDonutMultipliers, isAutoClickerActivated) {
         this.numDonuts = numDonuts;
         this.numAutoClickers = numAutoClickers;
         this.numDonutMultipliers = numDonutMultipliers;
+        this.isAutoClickerActivated = isAutoClickerActivated;
     }
     
 
@@ -33,6 +34,10 @@ class DonutMaker {
         this.numDonuts -= autoClickerCost;
         this.numAutoClickers += 1;
         } 
+    }
+
+    activateAutoClicker() {
+        this.isAutoClickerActivated = true;
     }
 
     addDonutMultiplier() {

@@ -4,7 +4,9 @@ import {displayDonutStats} from "./utility-functions/utils"
 renderPage();
 
 function renderPage() {
+
     addDonut();
+  
 }
 
 function addDonut() {
@@ -12,7 +14,7 @@ function addDonut() {
 
 
   addDonut.addEventListener('click', () => {
-    const donuts = new DonutMaker(0, 0, 0);
+    const donuts = new DonutMaker(0, 0, 0, false);
     const donutList = document.querySelector('#numOfDonuts');
     const donutInfoPara = document.createElement('p');
     const donutInfoSection = document.createElement('section');
@@ -63,9 +65,14 @@ addAutoClicker.addEventListener('click', () => {
 
 });
 
-  });
+setInterval(() => {
+  if (donuts.isAutoClickerActivated == true) {
+    console.log('Firing');
+    donuts.addDonut();
+    displayDonutStats(donutInfoPara, donuts);
+  }
+}, 1000);
+
+});
+
 }
-
-
-
-
