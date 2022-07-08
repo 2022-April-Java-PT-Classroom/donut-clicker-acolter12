@@ -46,7 +46,7 @@ button {
     padding: 15px 30px;
 }
 
-.hide2{
+.hide{
     display: none;
 }
 
@@ -54,14 +54,14 @@ button {
     display: none;
 }
 
-.hide3{
+.aboutMe{
     display: none;
 }
 
 
-.show1{
+.show{
     
-    float: left;
+    background-color: pink;
     position: relative;
     display: block;
 

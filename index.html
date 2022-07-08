@@ -13,12 +13,22 @@
  
       <nav id="navBar">
         <ul class="navBar_list">
-        <li class="navBarItem">Fred the Baker</li>
+        <button id="navBarItem">Fred the Baker</button>
         <li class="navBarItem"><a href="https://orteil.dashnet.org/cookieclicker/">Game Inspiration</a></li>
-        <li class="navBarItem">About Me</li>
+        <button id="contact">Contact</button>
         </ul>
-    <!-- </nav>  
-      <button id="navBarItem">Fred the Baker</button>
+      </nav>  
+
+      <section class="hide">
+        <h3>Fred</h3>
+        <p>The Baker</p>
+      </section>
+
+      <section class="hide">
+        <h1>About me</h1>
+        <p>Adrian</p>
+      </section>
+      <!-- <button id="navBarItem">Fred the Baker</button>
       <section class = "hide1">
         <h2 class="fred-theBaker">Fred the Baker</h2>
         <p>Fred the Baker Baking Company</p>
@@ -32,7 +42,7 @@
       <section class = "hide3">
         <h2 class="contact-info">Contact</h2>
         <p>About me, Contact info</p>
-      </section> -->
+      </section> --> 
 
   </header>
 
@@ -42,7 +52,11 @@
 
       <section id="donutCount">
         <h2 class="donutCount_heading">Donut's Made: </h2>
-        <div class="donutCount_number"></div>
+        <input type="text" class="donutCount_number"></div>
+      </section>
+
+      <section id="numOfDonuts">
+
       </section>
 
       <section class="autoClickers_info">
@@ -55,7 +69,7 @@
         <button class="donutMultiplier_info__purchase">Buy a Donut Multiplier</button>
       </section>
 
-      <button class="makeDonut_button">Make A Donut!</button>
+      <button id="makeDonut_button">Make A Donut!</button>
 
     </div>
 

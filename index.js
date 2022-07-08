@@ -1,10 +1,33 @@
+import DonutMaker from "./DonutMaker";
+import {displayDonutStats} from "./utility-functions/utils"
 
-var button = document.querySelectorAll('#navBarItem');
-var h2 = document.getElementsByClassName('.fred-theBaker, .conatct-info');
-var content = document.querySelector('.hide1, .hide2');
-button.addEventListener('click',function() {
-    content.classList.toggle('show1');
-    content.classList.toggle('show2');
-  });
+renderPage();
+
+function renderPage() {
+    addDonut();
+}
+
+function addDonut() {
+  const createBtn = document.querySelector('#makeDonut_button');
+  const numDonuts = document.querySelector('.donutCount_number');
+  const numAutoClickers = document.querySelector('.autoClickers_info');
+  const numDonutMultipliers = document.querySelector('.donutMultiplier_info');
+  
+
+  createBtn.addEventListener('click', () => {
+    const donuts = new DonutMaker(numDonuts.value, numAutoClickers.value, numDonutMultipliers.value);
+    const donutList = document.querySelector('numOfDonuts');
+    const donutInfoPara = document.createElement('p');
+    const donutInfoSection = document.createElement('section');
+
+    displayDonutStats(donutInfoPara, donuts);
+
+    donutInfoSection.appendChild(donutInfoPara);
+
+    
+  })
+}
+
+
 
 
