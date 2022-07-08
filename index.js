@@ -8,13 +8,10 @@ function renderPage() {
 }
 
 function addDonut() {
-  const createBtn = document.querySelector('#makeDonut_button');
-  const numDonuts = document.querySelector('.donutCount_number');
-  const numAutoClickers = document.querySelector('.autoClicker_number');
-  const numDonutMultipliers = document.querySelector('.donutMultiplier_number');
-  
+  const addDonut = document.querySelector('#makeDonut_button');
 
-  createBtn.addEventListener('click', () => {
+
+  addDonut.addEventListener('click', () => {
     const donuts = new DonutMaker(0, 0, 0);
     const donutList = document.querySelector('#numOfDonuts');
     const donutInfoPara = document.createElement('p');
@@ -35,6 +32,20 @@ function addDonut() {
       donuts.addDonut();
 
       displayDonutStats(donutInfoPara, donuts);
+
+});
+
+const addDonutMultiplier = document.createElement('button');
+addDonutMultiplier.innerText = 'Multiply Donuts';
+
+donutInfoSection.appendChild(addDonutMultiplier);
+
+donutList.appendChild(donutInfoSection);
+
+addDonutMultiplier.addEventListener('click', () => {
+  donuts.addDonutMultiplier();
+
+  displayDonutStats(donutInfoPara, donuts);
 
 });
 
