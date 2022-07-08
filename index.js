@@ -49,6 +49,20 @@ addDonutMultiplier.addEventListener('click', () => {
 
 });
 
+const addAutoClicker = document.createElement('button');
+addAutoClicker.innerText = 'AutoClicker';
+
+donutInfoSection.appendChild(addAutoClicker);
+
+donutList.appendChild(donutInfoSection);
+
+addAutoClicker.addEventListener('click', () => {
+  donuts.addAutoClicker();
+
+  displayDonutStats(donutInfoPara, donuts);
+
+});
+
   });
 }
 
