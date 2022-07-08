@@ -15,14 +15,29 @@ function addDonut() {
   
 
   createBtn.addEventListener('click', () => {
-    const donuts = new DonutMaker(numDonuts.value, numAutoClickers.value, numDonutMultipliers.value);
+    const donuts = new DonutMaker(0, 0, 0);
     const donutList = document.querySelector('#numOfDonuts');
     const donutInfoPara = document.createElement('p');
     const donutInfoSection = document.createElement('section');
   
+    displayDonutStats(donutInfoPara, donuts);
+    donutInfoSection.appendChild(donutInfoPara);
 
-    donuts.addDonut();
-    console.log(donuts, numDonuts);
+
+    const addADonut = document.createElement('button');
+    addADonut.innerText = 'Create A Donut';
+
+    donutInfoSection.appendChild(addADonut);
+
+    donutList.appendChild(donutInfoSection);
+
+    addADonut.addEventListener('click', () => {
+      donuts.addDonut();
+
+      displayDonutStats(donutInfoPara, donuts);
+
+});
+
   });
 }
 

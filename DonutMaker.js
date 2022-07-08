@@ -5,17 +5,18 @@ class DonutMaker {
         this.numAutoClickers = numAutoClickers;
         this.numDonutMultipliers = numDonutMultipliers;
     }
+    
 
     addDonut() {
         if(this.numAutoClickers >= 1 && this.numDonutMultipliers >=1) {
-            this.numDonuts += Math.pow(1.2, this.numDonutMultipliers) +this.numAutoClickers;
+            this.numDonuts += Math.round(1.2**this.numDonutMultipliers) +this.numAutoClickers;
             
         }else if(this.numAutoClickers >=1) {
             this.numDonuts += 1;
            this.numDonuts += this.numAutoClickers;
 
         } else if(this.numDonutMultipliers >= 1) {
-           this.numDonuts += Math.pow(1.2, this.numDonutMultipliers);
+           this.numDonuts += Math.round(1.2**this.numDonutMultipliers);
 
         } else if (this.numDonuts += 1);
    
