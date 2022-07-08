@@ -63,15 +63,13 @@ addAutoClicker.addEventListener('click', () => {
 
   displayDonutStats(donutInfoPara, donuts);
 
-});
+  setInterval(function() {
+    if (donuts.isAutoClickerActivated == true) {
+      donuts.addDonut();
+    }
+  }, 1000);
 
-setInterval(() => {
-  if (donuts.isAutoClickerActivated == true) {
-    console.log('Firing');
-    donuts.addDonut();
-    displayDonutStats(donutInfoPara, donuts);
-  }
-}, 1000);
+});
 
 });
 
