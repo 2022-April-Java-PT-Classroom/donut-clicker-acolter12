@@ -43,8 +43,23 @@ addDonutMultiplier.innerText = 'Multiply Donuts';
 donutInfoSection.appendChild(addDonutMultiplier);
 
 donutList.appendChild(donutInfoSection);
+// if(donuts.numDonuts > 0) {
+//   addDonutMultiplier.disabled = false;
+// } else  {
+//   addDonutMultiplier.disabled = true;
+// }
 
 addDonutMultiplier.addEventListener('click', () => {
+  // if(donuts.numDonuts < 10) {
+  //   addDonutMultiplier.disabled = true;
+  // } else if (donuts.numDonuts > 10) {
+  //   addDonutMultiplier.disabled = false;
+  // }
+
+  if(donuts.numDonuts < 10) {
+    alert("You don't have enough to buy this yet! Keep making donuts!")
+  }
+
   donuts.addDonutMultiplier();
 
   displayDonutStats(donutInfoPara, donuts);
@@ -59,6 +74,9 @@ donutInfoSection.appendChild(addAutoClicker);
 donutList.appendChild(donutInfoSection);
 
 addAutoClicker.addEventListener('click', () => {
+  if(donuts.numDonuts < 100) {
+    alert("You don't have enough to buy this yet! Keep making donuts!")
+  }
   donuts.addAutoClicker();
 
   displayDonutStats(donutInfoPara, donuts);
