@@ -87,6 +87,8 @@ addAutoClicker.addEventListener('click', () => {
     }
   }, 1000);
 
+ 
+
 });
 
 });

@@ -13,36 +13,25 @@
  
       <nav id="navBar">
         <ul class="navBar_list">
-        <button id="navBarItem">Fred the Baker</button>
-        <li class="navBarItem"><a href="https://orteil.dashnet.org/cookieclicker/">Game Inspiration</a></li>
-        <button id="contact">Contact</button>
+
+        <div class="dropdown">
+          <button class="dropbtn">Fred The Baker</button>
+          <div class="dropdown-content">
+            <p>The Bakery</p>
+          </div>
+        </div>
+        <div class="dropdown2">
+            <button class="dropbtn2">About Developer</button>
+            <div class="dropdown-content2">
+              <a href="https://www.linkedin.com/in/adrian-colter-819318236/">Add me on LinkedIn</a>
+              <a href="https://github.com/acolter12">My Repositories</a>
+          </div>
+        </div>
+        <button id="navBarItem"><a href="https://orteil.dashnet.org/cookieclicker/">Game Inspiration</a></button>
+
         </ul>
       </nav>  
 
-      <section class="hide">
-        <h3>Fred</h3>
-        <p>The Baker</p>
-      </section>
-
-      <section class="hide">
-        <h1>About me</h1>
-        <p>Adrian</p>
-      </section>
-      <!-- <button id="navBarItem">Fred the Baker</button>
-      <section class = "hide1">
-        <h2 class="fred-theBaker">Fred the Baker</h2>
-        <p>Fred the Baker Baking Company</p>
-      </section>
-
-      <button id="navBarItem">Inspiration</button>
-        <h2 class="cookie-clicker" href="https://orteil.dashnet.org/cookieclicker/"> Inspiration</h2>
-      </section>
-
-      <button id="navBarItem">Contact</button>
-      <section class = "hide3">
-        <h2 class="contact-info">Contact</h2>
-        <p>About me, Contact info</p>
-      </section> --> 
 
   </header>
 
@@ -72,10 +61,12 @@
       
       </section>
 
-      <button id="makeDonut_button">Start Game</button>
+      <button id="makeDonut_button"><img src="images/pink-donut.jpg">Start A Game</button>
+      <button onClick="window.location.href=window.location.href">Reset Game</button>
 
     </div>
 
     <script src="./index.js"></script>
+    <footer>Adrian Colter &copy 2022</footer>
   </body>
 </html>

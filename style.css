@@ -1,6 +1,10 @@
 *{
     background-color: floralwhite;
+    color: hotpink;
+    text-align: center;
+    
 }
+
 
 a{
     text-decoration: none;
@@ -24,11 +28,11 @@ a:hover{
     text-decoration: none;
 }
 
-.navBarItem:hover{
+#navBarItem:hover{
     background-color: hotpink;
 }
 
-.navBarItem{
+#navBarItem{
     display: inline;
     background-color: lightpink;
     color: white;
@@ -37,25 +41,98 @@ a:hover{
     list-style-type: none;
 }
 
+.dropbtn {
+    background-color: lightpink;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: lightpink;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgoldenrodyellow;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+  .dropdown:hover .dropbtn {
+    background-color: hotpink;
+}
+
+  .dropbtn2 {
+    background-color: lightpink;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+    background-color: lightpink;
+  }
+
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: lightgoldenrodyellow;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content2 a:hover {
+    background-color: hotpink;
+    text-align: justify;
+    color: white;
+}
+    
+
+  .dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+  .dropdown2:hover .dropbtn2 {
+    background-color: hotpink;
+}
+
+
+h2{
+    display: inline;
+    margin-right: 2px;
+    text-align: center;
+}
 
 button {
     background-color: lightpink;
     border: none;
     color: white;
+    display: inline;
     font-size: 16px;
     padding: 15px 30px;
+    margin: 20px;
+}
+
+button:hover{
+    background-color: hotpink;
 }
 
 button:disabled {
     background-color: gray;
-}
-
-.hide{
-    display: none;
-}
-
-.hide1{
-    display: none;
 }
 
 .aboutMe{
@@ -63,23 +140,27 @@ button:disabled {
 }
 
 
-.show{
-    
-    background-color: pink;
-    position: relative;
-    display: block;
-
-  }
-
-  .show2{
-    
-    float: left;
-    position: relative;
-    display: block;
-
-  }
-
-  .makeDonut_button {
+ #makeDonut_button {
+    border-radius: 5%;
     display: flex;
     justify-content: center;
+    align-self: center;
+    margin-top: 60px;
+    
+    margin-left: 60em;
+    
+  }
+
+  img{
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    max-width: 150%;
+  }
+
+  footer{
+    margin-top: 50px;
+    background-color: lightpink;
+    color: white;
+    text-align: center;
   }
