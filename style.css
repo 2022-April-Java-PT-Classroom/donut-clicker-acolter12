@@ -7,8 +7,6 @@
 
 a{
     text-decoration: none;
-    background-color: lightpink;
-    color: white;
 }
 
 .container{
@@ -53,6 +51,17 @@ a:hover{
     font-size: 16px;
     padding: 15px 30px;
     list-style-type: none;
+    z-index: 1;
+}
+
+#navBarItem a{
+  color: white;
+  background-color: lightpink;
+}
+
+#navBarItem a:hover{
+  color: white;
+  background-color: hotpink;
 }
 
 .dropbtn {
@@ -72,14 +81,19 @@ a:hover{
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: lightgoldenrodyellow;
+    background-color: honeydew;
     min-width: 160px;
+    height: auto;
+    margin: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
 
   .dropdown:hover .dropdown-content {
     display: block;
+    color: hotpink;
+    margin: auto;
+    padding: 5px;
 }
 
   .dropdown:hover .dropbtn {
@@ -103,17 +117,42 @@ a:hover{
   .dropdown-content2 {
     display: none;
     position: absolute;
-    background-color: lightgoldenrodyellow;
-    min-width: 160px;
+    background-color: honeydew;
+    width: auto;
+    margin: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
 
-  .dropdown-content2 a:hover {
+  .contact{
+    margin: auto;
+    padding: 2rem;
+    color: hotpink;
+
+  }
+
+  .contact:hover{
     background-color: hotpink;
-    text-align: justify;
+    text-decoration: underline;
+    color: white;
+  }
+
+  .dropdown-content2 a:hover {
+    color: hotpink;
+    text-align: center;
     color: white;
 }
+
+.fredPara{
+  display: flex;
+  background-color: hotpink;
+  color: white;
+  text-align: center;
+  font-size: medium;
+  padding: 8px;
+}
+
+
     
 
   .dropdown2:hover .dropdown-content2 {
